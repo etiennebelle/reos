@@ -1,15 +1,6 @@
 @use 'mixins' as *;
 
-@font-face {
-  font-family: 'NeueMontreal-Regular';
-  src: url('/fonts/NeueMontreal-Regular.otf') format('opentype');
-  font-weight: 700;
-  font-display: swap;
-  font-style: normal;
-}
-
 .headline {
-  font-family: 'NeueMontreal-Regular', 'sans-serif';
   color: var(--color-black);
   line-height: 1;
 
@@ -35,7 +26,6 @@
 }
 
 .body{
-  font-family: 'NeueMontreal-Regular', 'sans-serif';
   color: var(--color-black);
   line-height: 1;
 

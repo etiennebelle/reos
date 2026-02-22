@@ -1,42 +1,47 @@
-# ⚡⚡⚡ Wordpress Vite Starter 🏄‍♂️
+# ⚡ WordPress Vite Starter 🏄‍♂️
+
+## 📋 Requirements
+
+- **PHP** >= 8.0
+- **WordPress** >= 6.0
 
 ## 🚧 Installation
 
-**Theme Dir**
+**1. Dans le dossier du thème, installe les dépendances :**
 ```
-# Install dependencies 
-
 npm i
 ```
 
+**2. Dans `wp-config.php`, ajoute cette ligne juste avant `/* That's all, stop editing! */` :**
+```php
+define('WP_ENVIRONMENT_TYPE', 'local');
+```
+
+## 🛠️ Commandes
+
+| Commande | Description |
+|---|---|
+| `npm run dev` | Démarre le serveur de dev |
+| `npm run build` | Build pour la production |
+
 ## 🤝 Features
 
-- **Vite** – For building and minifying your CSS and JavaScript
-
-```
-# Start the dev server...
-npm run dev
-
-# Build for production...
-npm run build
-```
-
-- **Sass**
+- **Vite** – Bundling et minification CSS / JS
+- **Sass** – Préprocesseur CSS
 
 ## ⚙️ Usage
 
-- **Images**
-
-```
+**Images**
+```php
 <img src="<?php echo vite_url('img/mon-image.jpg'); ?>" alt="">
 ```
 
-- **Fonts**
-
-```
+**Fonts**
+```scss
 @font-face {
   font-family: 'my-font';
   src: url('/fonts/my-font.[ext]') format();
 }
 ```
-*Some IDE may not resolve Vite's path but the code's working correctly*
+
+> ⚠️ Certains IDE ne resolvent pas les paths Vite, mais le code fonctionne correctement.
