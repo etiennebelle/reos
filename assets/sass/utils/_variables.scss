@@ -21,3 +21,7 @@ $laptop: "screen and (min-width: #{$laptop-min}) and (max-width:#{$laptop-max})"
 $laptop-and-up: "screen and (min-width: #{$laptop-min})";
 $desktop: "screen and (min-width: #{$desktop-min})";
 $widescreen: "screen and (min-width: #{$widescreen-min})";
+
+$desktop-margin: 20px;
+$mobile-margin: 10px;
+$header-height: 40px;

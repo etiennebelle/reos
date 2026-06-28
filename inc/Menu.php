@@ -37,19 +37,6 @@
     remove_meta_box('dashboard_quick_press', 'dashboard', 'side'); // Quick Draft
   });
 
-  // Remove admin dashboard widgets.
-  add_action('wp_dashboard_setup', function () {
-    remove_meta_box('dashboard_activity', 'dashboard', 'normal'); // Activity
-    // remove_meta_box('dashboard_right_now', 'dashboard', 'normal'); // At a Glance
-    // remove_meta_box('dashboard_site_health', 'dashboard', 'normal'); // Site Health Status
-    remove_meta_box('dashboard_primary', 'dashboard', 'side'); // WordPress Events and News
-    remove_meta_box('dashboard_quick_press', 'dashboard', 'side'); // Quick Draft
-  });
-
-  add_action('init', function (){
-    remove_post_type_support( 'page', 'editor' );
-  });
-
-  /* Register custom post types */
-
-  /* Register custom post types */
+  add_action('init', function() {
+    remove_post_type_support('page', 'editor');
+  }, 0);

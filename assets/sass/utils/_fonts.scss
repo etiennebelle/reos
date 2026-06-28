@@ -23,10 +23,10 @@
 
   &-sm{
     font-size: rem(12px);
-    line-height: 1.1;
+    line-height: 1.25;
 
     @include device(laptop-and-up){
-      font-size: vw(16px);
+      font-size: vw(10px);
     }
   }
 

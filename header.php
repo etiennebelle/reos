@@ -1,3 +1,8 @@
+<?php
+  $header_title = get_field('header_title');
+  $menu_title = get_field('menu_title');
+?>
+
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 
@@ -12,3 +17,10 @@
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
+
+<header class="header">
+  <div class="header__wrapper">
+    <h1 class="header__title body body-sm"><?= esc_html($header_title); ?></h1>
+    <h2 class="header__menu body body-sm"><?= esc_html($menu_title); ?></h2>
+  </div>
+</header>

@@ -8,7 +8,7 @@
   get_header();
 ?>
 
-  <main id="main">
+  <main id="main" class="main-teasing">
     <div class="wrapper">
       <h1 class="body body-xl body-lo"><?= esc_html(get_field('teasing_title')); ?></h1>
       <p class="body body-sm body-up"><?= esc_html(get_field('teasing_catchphrase')); ?></p>
